@@ -1,6 +1,42 @@
-console.log("Hello World!");
+var inquirer = require("inquirer");
+// fs is a Node standard library package for reading and writing files
+var fs = require("fs");
 
-// Write file
+inquirer.prompt([
+  {
+    type: "input",
+    name: "title",
+    message: "What is the title of your application?"
+  }
+]).then(function(data) {
+
+  // write to README.md, populate input data, callback function to log error, console.log success if processed successfully
+  fs.writeFile("README.md", 
+    "# " + data.title + // Title
+    "\n", 
+    
+    function(err) {
+
+    if (err) {
+      return console.log(err);
+    }
+
+    console.log("Success!");
+
+  });
+});
+
+// * The generated README includes the following sections: 
+
+//   * Title
+//   * Description
+//   * Table of Contents
+//   * Installation
+//   * Usage
+//   * License
+//   * Contributing
+//   * Tests
+//   * Questions
 
 // Questions
 
@@ -24,6 +60,3 @@ console.log("Hello World!");
 
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
-
-var inquirer = require("inquirer");
-var fs = require("fs");
