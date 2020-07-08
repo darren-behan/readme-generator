@@ -1,4 +1,6 @@
 
+  https://img.shields.io/github/package-json/v/darren-behan/readme-generator 
+
   # Welcome to Darren 👋
 
   ## Description 📚
@@ -16,6 +18,6 @@
 
   ## Installation ⚙️
 
-  run npm
+  npm i
 
   

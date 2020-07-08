@@ -57,6 +57,7 @@ function promptUser() {
 // function to generate the content required for the file being created
 function generateReadMe(answers) {
   return `
+  https://img.shields.io/github/package-json/v/darren-behan/readme-generator \n
   # Welcome to ${answers.title} 👋\n
   ## Description 📚\n
   ${answers.description}\n
