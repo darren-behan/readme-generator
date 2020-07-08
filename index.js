@@ -1,62 +1,74 @@
 var inquirer = require("inquirer");
 // fs is a Node standard library package for reading and writing files
 var fs = require("fs");
+const util = require("util");
 
-inquirer.prompt([
-  {
-    type: "input",
-    name: "title",
-    message: "What is the title of your application?"
-  }
-]).then(function(data) {
+const writeFileAsync = util.promisify(fs.writeFile);
 
-  // write to README.md, populate input data, callback function to log error, console.log success if processed successfully
-  fs.writeFile("README.md", 
-    "# " + data.title + // Title
-    "\n", 
-    
-    function(err) {
-
-    if (err) {
-      return console.log(err);
+function promptUser() {
+  return inquirer.prompt([
+    {
+      type: "input",
+      name: "title",
+      message: "What is the title of your application?"
+    },
+    {
+      type: "input",
+      name: "description",
+      message: "Provide a description of your application."
+    },
+    {
+      type: "input",
+      name: "installation",
+      message: "Provide an explanation on how to install your application."
+    },
+    {
+      type: "input",
+      name: "usage",
+      message: "Provide an explanation on how to use your application."
+    },
+    {
+      type: "input",
+      name: "license",
+      message: "Provide the license number for your application."
+    },
+    {
+      type: "input",
+      name: "contributing",
+      message: "Provide an explanation on how to contribute to your application."
+    },
+    {
+      type: "input",
+      name: "tests",
+      message: "Provide an explanation on how to test to your application."
+    },
+    {
+      type: "input",
+      name: "questions",
+      message: "Provide questions that if answered, will help enhance your application."
     }
+  ]);
+}
 
-    console.log("Success!");
+function generateReadMe(answers) {
+  return `
+  ## ${answers.title} \n
+  ## ${answers.title}`;
+}
 
-  });
-});
+async function init() {
+  console.log("hi")
+  try {
+    const answers = await promptUser();
 
-// * The generated README includes the following sections: 
+    const readme = generateReadMe(answers);
 
-//   * Title
-//   * Description
-//   * Table of Contents
-//   * Installation
-//   * Usage
-//   * License
-//   * Contributing
-//   * Tests
-//   * Questions
+    await writeFileAsync("README.md", readme);
 
-// Questions
+    console.log("Successfully wrote to README.md");
+  } catch(err) {
+    console.log(err);
+  }
+}
 
-// WHEN I am prompted for information about my application repository
-// THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-
-// WHEN I enter my project title
-// THEN this is displayed as the title of the README
-
-// WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-// THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-
-// WHEN I choose a license for my application from a list of options
-// THEN a badge for that license is added hear the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-
-// WHEN I enter my GitHub username
-// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-
-// WHEN I enter my email address
-// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-
-// WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding section of the README
+init();
