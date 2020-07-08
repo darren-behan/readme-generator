@@ -10,50 +10,51 @@ function promptUser() {
     {
       type: "input",
       name: "title",
-      message: "What is the title of your application?"
+      message: "👤 Project title"
     },
     {
       type: "input",
       name: "description",
-      message: "Provide a description of your application."
+      message: "📚 Project description"
     },
-    {
-      type: "input",
-      name: "installation",
-      message: "Provide an explanation on how to install your application."
-    },
-    {
-      type: "input",
-      name: "usage",
-      message: "Provide an explanation on how to use your application."
-    },
-    {
-      type: "input",
-      name: "license",
-      message: "Provide the license number for your application."
-    },
-    {
-      type: "input",
-      name: "contributing",
-      message: "Provide an explanation on how to contribute to your application."
-    },
-    {
-      type: "input",
-      name: "tests",
-      message: "Provide an explanation on how to test to your application."
-    },
-    {
-      type: "input",
-      name: "questions",
-      message: "Provide questions that if answered, will help enhance your application."
-    }
+    // {
+    //   type: "input",
+    //   name: "installation",
+    //   message: "Provide an explanation on how to install your application."
+    // },
+    // {
+    //   type: "input",
+    //   name: "usage",
+    //   message: "Provide an explanation on how to use your application."
+    // },
+    // {
+    //   type: "input",
+    //   name: "license",
+    //   message: "Provide the license number for your application."
+    // },
+    // {
+    //   type: "input",
+    //   name: "contributing",
+    //   message: "Provide an explanation on how to contribute to your application."
+    // },
+    // {
+    //   type: "input",
+    //   name: "tests",
+    //   message: "Provide an explanation on how to test to your application."
+    // },
+    // {
+    //   type: "input",
+    //   name: "questions",
+    //   message: "Provide questions that if answered, will help enhance your application."
+    // }
   ]);
 }
 
 function generateReadMe(answers) {
   return `
-  ## ${answers.title} \n
-  ## ${answers.title}`;
+  ## Welcome to ${answers.title} 👋\n
+  <%= ${answers.description} %>\n
+  `;
 }
 
 async function init() {
