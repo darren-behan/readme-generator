@@ -1,11 +1,11 @@
 
-  # Welcome to d 👋
+  # Welcome to Darren 👋
 
-  ## Description
+  ## Description 📚
 
-  d
+  Behan
 
-  ## Table of Contents
+  ## Table of Contents 🗂
 
     * [Installation](#installation)
     * [Usage](#usage)
@@ -13,4 +13,9 @@
     * [Contributing](#contributing)
     * [Tests](#tests)
     * [Questions](#questions)
+
+  ## Installation ⚙️
+
+  run npm
+
   
