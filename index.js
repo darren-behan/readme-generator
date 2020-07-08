@@ -52,8 +52,17 @@ function promptUser() {
 
 function generateReadMe(answers) {
   return `
-  ## Welcome to ${answers.title} 👋\n
-  <%= ${answers.description} %>\n
+  # Welcome to ${answers.title} 👋\n
+  ## Description\n
+  ${answers.description}\n
+  ## Table of Contents\n
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
+    * [Tests](#tests)
+    * [Questions](#questions)\n
+  
   `;
 }
 
