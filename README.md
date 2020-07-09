@@ -1,43 +1,42 @@
 
-  # Welcome to README Generator 👋
+# Welcome to README Generator 👋
 
-  ## Description 📚
+## Description 📚
 
-  An app to generate a professional GitHub readme file
+An app to generate a professional GitHub readme file
 
-  ## Table of Contents 🗂
+## Table of Contents 🗂
 
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [License](#License)
-  * [Contributing](#Contributing)
-  * [Tests](#Tests)
-  * [Questions](#Questions)
+* [Installation](#Installation-⚙️)
+* [Usage](#Usage-🚨)
+* [License](#License-🖋)
+* [Contributing](#Contributing-👩‍💻)
+* [Tests](#Tests-🧪)
+* [Questions](#Questions-❓)
 
-  ## Installation ⚙️
+## Installation ⚙️
 
-  use `git clone` to install locally and `npm i`
+use `git clone` to install locally and `npm i`
 
-  ## Usage 🚨
+## Usage 🚨
 
-  run `node index.js` in the terminal
+run `node index.js` in the terminal
 
-  ## License 🖋
+## License 🖋
 
-  1.0
+1.0
 
-  ![License Badge](https://img.shields.io/badge/license-1-blue)
+![License Badge](https://img.shields.io/badge/license-1-blue)
 
-  ## Contributing 👩‍💻
+## Contributing 👩‍💻
 
-  create a fork and submit a PR for review
+create a fork and submit a PR for review
 
-  ## Tests 🧪
+## Tests 🧪
 
-  n/a
+n/a
 
-  ## Questions ❓
+## Questions ❓
 
-  n/a
+n/a
 
-  
