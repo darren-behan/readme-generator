@@ -7,32 +7,32 @@ An app to generate a professional GitHub readme file
 
 ## Table of Contents 🗂
 
-* [Installation](#Installation-⚙️)
-* [Usage](#Usage-🚨)
-* [License](#License-🖋)
-* [Contributing](#Contributing-👩‍💻)
-* [Tests](#Tests-🧪)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
 * [Questions](#Questions)
 
-## Installation ⚙️
+## Installation
 
 use `git clone` to install locally and `npm i`
 
-## Usage 🚨
+## Usage
 
 run `node index.js` in the terminal
 
-## License 🖋
+## License
 
 1.0
 
 ![License Badge](https://img.shields.io/badge/license-1-blue)
 
-## Contributing 👩‍💻
+## Contributing
 
 create a fork and submit a PR for review
 
-## Tests 🧪
+## Tests
 
 n/a
 
