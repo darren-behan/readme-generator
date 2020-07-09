@@ -1,42 +1,44 @@
 
-# Welcome to README Generator 👋
+  ![Code Structure](https://img.shields.io/badge/code-javascript-green) ![License Badge](https://img.shields.io/badge/license-1-blue) ![Last Commit](https://img.shields.io/github/last-commit/darren-behan/readme-generator) ![Open Issues](https://img.shields.io/github/issues-raw/darren-behan/readme-generator) ![Repo Size](https://img.shields.io/github/repo-size/darren-behan/readme-generator)
 
-## Description 📚
+  # Welcome to README Generator 👋
 
-An app to generate a professional GitHub readme file
+  ## Description
 
-## Table of Contents 🗂
+  📚 This app generates a README.md file through a series of user prompts in the command line. It is powered by node.js & ES6+.
 
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [License](#License)
-* [Contributing](#Contributing)
-* [Tests](#Tests)
-* [Questions](#Questions)
+  ## Table of Contents 🗂
 
-## Installation
+  * [Description](#Description)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [License](#License)
+  * [Contributing](#Contributing)
+  * [Tests](#Tests)
+  * [Questions](#Questions)
 
-use `git clone` to install locally and `npm i`
+  ## Installation
 
-## Usage
+  ⚙️ use `git clone` to install locally and `npm i`
 
-run `node index.js` in the terminal
+  ## Usage
 
-## License
+  🚨 run `node index.js` in the terminal
 
-1.0
+  ## License
 
-![License Badge](https://img.shields.io/badge/license-1-blue)
+  🖋 $![License Badge](https://img.shields.io/badge/license-1-blue)
 
-## Contributing
+  ## Contributing
 
-create a fork and submit a PR for review
+  👩‍💻 create a fork and submit a PR for review
 
-## Tests
+  ## Tests
 
-n/a
+  🧪 n/a
 
-## Questions
+  ## Questions
 
-n/a
+  ❓ Feel free to create an issue for review
 
+  

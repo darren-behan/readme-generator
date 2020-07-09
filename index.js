@@ -13,6 +13,16 @@ function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
+      name: "github",
+      message: "🌍 Enter your GitHub username"
+    },
+    {
+      type: "input",
+      name: "github_repo",
+      message: "⚡️ Enter your GitHub repo name"
+    },
+    {
+      type: "input",
       name: "title",
       message: "👤 Project title"
     },
@@ -30,6 +40,11 @@ function promptUser() {
       type: "input",
       name: "usage",
       message: "🚨 Steps to use this app"
+    },
+    {
+      type: "input",
+      name: "code_base",
+      message: "📖  Main Code Base"
     },
     {
       type: "input",
@@ -57,29 +72,30 @@ function promptUser() {
 // function to generate the content required for the file being created
 function generateReadMe(answers) {
   return `
+  ![Code Structure](https://img.shields.io/badge/code-${answers.code_base}-green) ![License Badge](https://img.shields.io/badge/license-${answers.license[0]}-blue) ![Last Commit](https://img.shields.io/github/last-commit/${answers.github}/${answers.github_repo}) ![Open Issues](https://img.shields.io/github/issues-raw/${answers.github}/${answers.github_repo}) ![Repo Size](https://img.shields.io/github/repo-size/${answers.github}/${answers.github_repo})\n
   # Welcome to ${answers.title} 👋\n
-  ## Description 📚\n
-  ${answers.description}\n
+  ## Description\n
+  📚 ${answers.description}\n
   ## Table of Contents 🗂\n
-  * [Installation](#Installation-)
+  * [Description](#Description)
+  * [Installation](#Installation)
   * [Usage](#Usage)
   * [License](#License)
   * [Contributing](#Contributing)
   * [Tests](#Tests)
   * [Questions](#Questions)\n
-  ## Installation ⚙️\n
-  ${answers.installation}\n
-  ## Usage 🚨\n
-  ${answers.usage}\n
-  ## License 🖋\n
-  ${answers.license}\n
-  ![License Badge](https://img.shields.io/badge/license-${answers.license[0]}-blue)\n
-  ## Contributing 👩‍💻\n
-  ${answers.contributing}\n
-  ## Tests 🧪\n
-  ${answers.tests}\n
-  ## Questions ❓\n
-  ${answers.questions}\n
+  ## Installation\n
+  ⚙️ ${answers.installation}\n
+  ## Usage\n
+  🚨 ${answers.usage}\n
+  ## License\n
+  🖋 $![License Badge](https://img.shields.io/badge/license-${answers.license[0]}-blue)\n
+  ## Contributing\n
+  👩‍💻 ${answers.contributing}\n
+  ## Tests\n
+  🧪 ${answers.tests}\n
+  ## Questions\n
+  ❓ ${answers.questions}\n
   `;
 }
 
