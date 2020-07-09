@@ -12,7 +12,7 @@ An app to generate a professional GitHub readme file
 * [License](#License-🖋)
 * [Contributing](#Contributing-👩‍💻)
 * [Tests](#Tests-🧪)
-* [Questions](#Questions-❓)
+* [Questions](#Questions)
 
 ## Installation ⚙️
 
