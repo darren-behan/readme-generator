@@ -61,12 +61,12 @@ function generateReadMe(answers) {
   ## Description 📚\n
   ${answers.description}\n
   ## Table of Contents 🗂\n
-    * [Installation](#Installation-⚙️)
-    * [Usage](#Usage-🚨)
-    * [License](#License-🖋)
-    * [Contributing](#Contributing-👩‍💻)
-    * [Tests](#Tests-🧪)
-    * [Questions](#Questions-❓)\n
+  * [Installation](#Installation-⚙️)
+  * [Usage](#Usage-🚨)
+  * [License](#License-🖋)
+  * [Contributing](#Contributing-👩‍💻)
+  * [Tests](#Tests-🧪)
+  * [Questions](#Questions-❓)\n
   ## Installation ⚙️\n
   ${answers.installation}\n
   ## Usage 🚨\n
