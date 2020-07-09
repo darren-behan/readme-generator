@@ -61,18 +61,19 @@ function generateReadMe(answers) {
   ## Description 📚\n
   ${answers.description}\n
   ## Table of Contents 🗂\n
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)\n
+    * [Installation](#Installation)
+    * [Usage](#Usage)
+    * [License](#License)
+    * [Contributing](#Contributing)
+    * [Tests](#Tests)
+    * [Questions](#Questions)\n
   ## Installation ⚙️\n
   ${answers.installation}\n
   ## Usage 🚨\n
   ${answers.usage}\n
   ## License 🖋\n
   ${answers.license}\n
+  ![License Badge](https://img.shields.io/badge/license-${answers.license[0]}-blue)\n
   ## Contributing 👩‍💻\n
   ${answers.contributing}\n
   ## Tests 🧪\n
