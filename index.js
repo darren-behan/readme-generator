@@ -41,11 +41,11 @@ function promptUser() {
       name: "contributing",
       message: "Provide an explanation on how to contribute to your application."
     },
-    // {
-    //   type: "input",
-    //   name: "tests",
-    //   message: "Provide an explanation on how to test to your application."
-    // },
+    {
+      type: "input",
+      name: "tests",
+      message: "Provide an explanation on how to test to your application."
+    },
     // {
     //   type: "input",
     //   name: "questions",
@@ -78,6 +78,8 @@ function generateReadMe(answers) {
   ${answers.license}\n
   ## Contributing 👩‍💻\n
   ${answers.contributing}\n
+  ## Tests 🧪\n
+  ${answers.tests}\n
   `;
 }
 
