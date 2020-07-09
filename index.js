@@ -36,11 +36,11 @@ function promptUser() {
       name: "license",
       message: "Provide the license number for your application."
     },
-    // {
-    //   type: "input",
-    //   name: "contributing",
-    //   message: "Provide an explanation on how to contribute to your application."
-    // },
+    {
+      type: "input",
+      name: "contributing",
+      message: "Provide an explanation on how to contribute to your application."
+    },
     // {
     //   type: "input",
     //   name: "tests",
@@ -76,6 +76,8 @@ function generateReadMe(answers) {
   ${answers.usage}\n
   ## License 🖋\n
   ${answers.license}\n
+  ## Contributing 👩‍💻\n
+  ${answers.contributing}\n
   `;
 }
 
