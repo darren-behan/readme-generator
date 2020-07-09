@@ -36,7 +36,7 @@ create a fork and submit a PR for review
 
 n/a
 
-## Questions ❓
+## Questions
 
 n/a
 
