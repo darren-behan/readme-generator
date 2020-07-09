@@ -26,11 +26,11 @@ function promptUser() {
       name: "installation",
       message: "⚙️  Provide installation instructions"
     },
-    // {
-    //   type: "input",
-    //   name: "usage",
-    //   message: "Provide an explanation on how to use your application."
-    // },
+    {
+      type: "input",
+      name: "usage",
+      message: "Provide an explanation on how to use your application."
+    },
     // {
     //   type: "input",
     //   name: "license",
@@ -58,6 +58,8 @@ function promptUser() {
 function generateReadMe(answers) {
   return `
   https://img.shields.io/github/package-json/v/darren-behan/readme-generator \n
+  .. image:: https://img.shields.io/github/package-json/v/darren-behan/readme-generator   :alt: GitHub package.json version \n
+  .. image:: https://img.shields.io/github/package-json/v/darren-behan/readme-generator   :alt: GitHub package.json version \n
   # Welcome to ${answers.title} 👋\n
   ## Description 📚\n
   ${answers.description}\n
@@ -70,6 +72,8 @@ function generateReadMe(answers) {
     * [Questions](#questions)\n
   ## Installation ⚙️\n
   ${answers.installation}\n
+  ## Usage 🚨\n
+  ${answers.usage}\n
   `;
 }
 
