@@ -29,37 +29,34 @@ function promptUser() {
     {
       type: "input",
       name: "usage",
-      message: "Provide an explanation on how to use your application."
+      message: "🚨 Steps to use this app"
     },
     {
       type: "input",
       name: "license",
-      message: "Provide the license number for your application."
+      message: "🖋  License number"
     },
     {
       type: "input",
       name: "contributing",
-      message: "Provide an explanation on how to contribute to your application."
+      message: "👩‍💻How to contribute"
     },
     {
       type: "input",
       name: "tests",
-      message: "Provide an explanation on how to test to your application."
+      message: "🧪 List the tests for the app"
     },
-    // {
-    //   type: "input",
-    //   name: "questions",
-    //   message: "Provide questions that if answered, will help enhance your application."
-    // }
+    {
+      type: "input",
+      name: "questions",
+      message: "❓ Questions"
+    }
   ]);
 }
 
 // function to generate the content required for the file being created
 function generateReadMe(answers) {
   return `
-  https://img.shields.io/github/package-json/v/darren-behan/readme-generator \n
-  .. image:: https://img.shields.io/github/package-json/v/darren-behan/readme-generator   :alt: GitHub package.json version \n
-  .. image:: https://img.shields.io/github/package-json/v/darren-behan/readme-generator   :alt: GitHub package.json version \n
   # Welcome to ${answers.title} 👋\n
   ## Description 📚\n
   ${answers.description}\n
@@ -80,6 +77,8 @@ function generateReadMe(answers) {
   ${answers.contributing}\n
   ## Tests 🧪\n
   ${answers.tests}\n
+  ## Questions ❓\n
+  ${answers.questions}\n
   `;
 }
 

@@ -1,11 +1,8 @@
-
-  https://img.shields.io/github/package-json/v/darren-behan/readme-generator 
-
-  # Welcome to Darren 👋
+  # Welcome to README Generator 👋
 
   ## Description 📚
 
-  Behan
+  An app to generate a professional GitHub readme file
 
   ## Table of Contents 🗂
 
@@ -18,6 +15,26 @@
 
   ## Installation ⚙️
 
-  npm i
+  use `git clone` to install locally and npm i
+
+  ## Usage 🚨
+
+  run node index.js in the terminal
+
+  ## License 🖋
+
+  1.0
+
+  ## Contributing 👩‍💻
+
+  create a fork and submit a PR for review
+
+  ## Tests 🧪
+
+  n/a
+
+  ## Questions ❓
+
+  n/a
 
   
