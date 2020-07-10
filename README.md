@@ -52,7 +52,7 @@
 
   ❓ Feel free to create an issue for review
 
-  🌍 https://github.com/darren-behan/readme-generator
+  🌍 https://github.com/darren-behan
 
   📧 me at darrenbehan@hotmail.com
 
