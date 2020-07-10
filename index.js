@@ -58,14 +58,14 @@ function promptUser() {
       ]
     },
     {
-      type: "list",
+      type: "input",
       name: "version",
       message: "🖋  Version",
     },
     {
       type: "input",
       name: "contributing",
-      message: "👩‍💻How to contribute",
+      message: "💻 How to contribute",
     },
     {
       type: "input",
