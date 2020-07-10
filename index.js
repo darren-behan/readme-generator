@@ -103,7 +103,7 @@ function generateReadMe(answers) {
   ## License\n
   ![License Badge](https://img.shields.io/badge/license-${answers.license}-blue)\n
   This app is using ${answers.license} license.
-  View [here](./${answers.license}.txt)
+  View [here](assets/licences/${answers.license}.txt)
   ## Version\n
   ![Version Badge](https://img.shields.io/badge/license-${answers.version}-red)\n
   ## Contributing\n

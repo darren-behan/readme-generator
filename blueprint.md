@@ -31,7 +31,7 @@
   ![License Badge](https://img.shields.io/badge/license-MIT-blue)
 
   This app is using MIT license.
-  View [here](./MIT.txt)
+  View [here](assets/licences/MIT.txt)
   ## Version
 
   ![Version Badge](https://img.shields.io/badge/license-1.0-red)
