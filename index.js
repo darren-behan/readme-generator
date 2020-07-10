@@ -14,88 +14,106 @@ function promptUser() {
     {
       type: "input",
       name: "github",
-      message: "🌍 Enter your GitHub username"
+      message: "🌍 Enter your GitHub username",
     },
     {
       type: "input",
       name: "github_repo",
-      message: "⚡️ Enter your GitHub repo name"
+      message: "⚡️ Enter your GitHub repo name",
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "📧 Enter your email",
     },
     {
       type: "input",
       name: "title",
-      message: "👤 Project title"
+      message: "👤 Project title",
     },
     {
       type: "input",
       name: "description",
-      message: "📚 Project description"
+      message: "📚 Project description",
     },
     {
       type: "input",
       name: "installation",
-      message: "⚙️  Provide installation instructions"
+      message: "⚙️  Provide installation instructions",
     },
     {
       type: "input",
       name: "usage",
-      message: "🚨 Steps to use this app"
+      message: "🚨 Steps to use this app",
     },
     {
-      type: "input",
-      name: "code_base",
-      message: "📖  Main Code Base"
-    },
-    {
-      type: "input",
+      type: "list",
+      message: "🖋  License type",
       name: "license",
-      message: "🖋  License number"
+      choices: [
+        "MIT", 
+        "Apache", 
+        "GNU", 
+        "ISC"
+      ]
+    },
+    {
+      type: "list",
+      name: "version",
+      message: "🖋  Version",
     },
     {
       type: "input",
       name: "contributing",
-      message: "👩‍💻How to contribute"
+      message: "👩‍💻How to contribute",
     },
     {
       type: "input",
       name: "tests",
-      message: "🧪 List the tests for the app"
+      message: "🧪 List the tests for the app",
     },
     {
       type: "input",
       name: "questions",
-      message: "❓ Questions"
-    }
+      message: "❓ Questions",
+    },
   ]);
 }
 
 // function to generate the content required for the file being created
 function generateReadMe(answers) {
   return `
-  ![Code Structure](https://img.shields.io/badge/code-${answers.code_base}-green) ![License Badge](https://img.shields.io/badge/license-${answers.license[0]}-blue) ![Last Commit](https://img.shields.io/github/last-commit/${answers.github}/${answers.github_repo}) ![Open Issues](https://img.shields.io/github/issues-raw/${answers.github}/${answers.github_repo}) ![Repo Size](https://img.shields.io/github/repo-size/${answers.github}/${answers.github_repo})\n
+  ![Code Count](https://img.shields.io/github/languages/count/${answers.github}/${answers.github_repo}) ![Main Code Base](https://img.shields.io/github/languages/top/${answers.github}/${answers.github_repo}) ![License Badge](https://img.shields.io/badge/license-${answers.license}-blue) ![Version Badge](https://img.shields.io/badge/license-${answers.version}-red) ![Last Commit](https://img.shields.io/github/last-commit/${answers.github}/${answers.github_repo}) ![Open Issues](https://img.shields.io/github/issues-raw/${answers.github}/${answers.github_repo}) ![Repo Size](https://img.shields.io/github/repo-size/${answers.github}/${answers.github_repo})\n
   # Welcome to ${answers.title} 👋\n
   ## Description\n
-  📚 ${answers.description}\n
+  ${answers.description}\n
   ## Table of Contents 🗂\n
   * [Description](#Description)
   * [Installation](#Installation)
   * [Usage](#Usage)
   * [License](#License)
+  * [Version](#Version)
   * [Contributing](#Contributing)
   * [Tests](#Tests)
   * [Questions](#Questions)\n
   ## Installation\n
-  ⚙️ ${answers.installation}\n
+  ${answers.installation}\n
   ## Usage\n
-  🚨 ${answers.usage}\n
+  ${answers.usage}\n
   ## License\n
-  🖋 $![License Badge](https://img.shields.io/badge/license-${answers.license[0]}-blue)\n
+  ![License Badge](https://img.shields.io/badge/license-${answers.license}-blue)\n
+  This app is using ${answers.license} license.
+  View [here](./${answers.license}.txt)
+  ## Version\n
+  ![Version Badge](https://img.shields.io/badge/license-${answers.version}-red)\n
   ## Contributing\n
-  👩‍💻 ${answers.contributing}\n
+  ${answers.contributing}\n
   ## Tests\n
-  🧪 ${answers.tests}\n
+  ${answers.tests}\n
   ## Questions\n
-  ❓ ${answers.questions}\n
+  ${answers.questions}\n
+  https://github.com/${answers.github} \n
+  ${answers.email}\n
   `;
 }
 
@@ -109,11 +127,11 @@ async function init() {
     const readme = generateReadMe(answers);
 
     // function pauses whilst writing the file with the content from "readme"
-    await writeFileAsync("README.md", readme);
+    await writeFileAsync("blueprint.md", readme);
 
     // notifies the user if successful
     console.log("Successfully wrote to README.md");
-  } catch(err) {
+  } catch (err) {
     // notifies the user if there was an error
     console.log(err);
   }
