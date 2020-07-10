@@ -26,7 +26,7 @@
 
   🚨 run `node index.js` in the terminal, answer the prompts and a file called `blueprint.md` will generate containing the information required for your `README.md` file
 
-  View video on live demo <a href="https://drive.google.com/file/d/1cVIweJ_w4y9fEC4dc8TGAjuIwE_CrJGn/view">here</a>
+  View live demo <a href="https://drive.google.com/file/d/1cVIweJ_w4y9fEC4dc8TGAjuIwE_CrJGn/view">here</a>
 
   ![Preview](./assets/images/preview.png "Preview of README")
 
@@ -52,6 +52,8 @@
 
   ❓ Feel free to create an issue for review
 
-  https://github.com/darren-behan/readme-generator
+  🌍 https://github.com/darren-behan/readme-generator
+
+  📧 me at darrenbehan@hotmail.com
 
   
