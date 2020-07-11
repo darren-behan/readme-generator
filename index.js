@@ -120,7 +120,7 @@ function generateReadMe(answers) {
 async function init() {
   console.log("hi");
   try {
-    // function pauses whilst gathering user data through the promptUser function and stores the data in "answers"
+    // init function pauses whilst gathering user data through the promptUser function and stores the data in "answers"
     const answers = await promptUser();
 
     // the answers from above are passed into the generateReadMe function which is stored in "readme"
